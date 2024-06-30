@@ -2,6 +2,7 @@ import "./Main.css";
 import { assets } from "../../assets/assets";
 import { useContext } from "react";
 import { Context } from "../../context/Context";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const Main = () => {
   // destructuring the object of context
@@ -19,7 +20,7 @@ const Main = () => {
       <div className="main">
         <div className="nav">
           <p>Gemini</p>
-          <img src={assets.user_icon} alt="UserIcon" />
+          <FaRegUserCircle className="img" />
         </div>
         <div className="main-container">
           {!showResult ? (
